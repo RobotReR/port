@@ -1,0 +1,56 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 10%;
+    padding-top: 5%;
+    
+}
+
+ nav li {
+    display: inline;
+    margin-right: 19%;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.cabe {
+    font-size: 100px;
+    position: center;
+    
+    padding-bottom:150px;
+    margin-left: 10%;
+    margin-top: 11%;
+
+}
+
+p { 
+    font-size: 30px;
+    position: center;
+    margin-left: 10%;
+    margin-right: 15%;
+    margin-top: 11%;
+    line-height: 1,8;
+    text-align: justify;
+
+}
+
+footer {
+    display: flex; /* Permite o uso de flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-bottom: 10%; 
+    padding-bottom: 5%;
+}

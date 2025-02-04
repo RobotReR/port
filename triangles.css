@@ -1,0 +1,67 @@
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav {
+  margin: 10%;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+  gap: 5%; /* Espaçamento entre as fotos */
+  padding: 0;
+}
+
+li {
+  text-align: center;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  width: 100%; /* Faz a imagem se ajustar ao espaço disponível */
+  height: 80vh; /* Mantém a proporção da imagem */
+  object-fit: cover; /* Corta ou ajusta a imagem para preencher */
+  border-radius: 10px; /* Cantos arredondados (opcional) */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra nas imagens (opcional) */
+  
+}
+
+
+footer {
+  display: flex; /* Permite o uso de flexbox para centralizar */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  margin-top: auto; 
+  
+}
+
+  /* Regras para telas menores (mobile) */
+@media (max-width: 768px) {
+ul {
+    grid-template-columns: repeat(1, 1fr); /* 1 coluna em telas pequenas */
+}
+
+img {
+    height: 40vh; /* Altura maior para imagens em telas menores */
+}
+}
+
+/* Regras para telas maiores (desktop) */
+@media (min-width: 769px) {
+ul {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas maiores */
+}
+
+img {
+    height: 30vh; /* Altura menor em telas maiores */
+}
+}
+
+
